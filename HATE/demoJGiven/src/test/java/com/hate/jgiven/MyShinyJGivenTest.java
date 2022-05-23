@@ -1,8 +1,6 @@
-package test.java.com.hate.jgiven;
+package com.hate.jgiven;
 
 import org.junit.Test;
-import com.tngtech.jgiven.junit.ScenarioTest;
-
 import com.tngtech.jgiven.junit.ScenarioTest;
 import com.tngtech.jgiven.Stage;
 
