@@ -1,0 +1,144 @@
+{
+  "className": "com.hate.jgivenwithspringboot.jgsb.TimeKeeperControllerTest",
+  "name": "Time Keeper Controller",
+  "scenarios": [
+    {
+      "className": "com.hate.jgivenwithspringboot.jgsb.TimeKeeperControllerTest",
+      "testMethodName": "the_root_path_returns_greetings_from_JGiven",
+      "description": "the root path returns greetings from JGiven",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "get",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "get"
+                },
+                {
+                  "value": "/",
+                  "argumentInfo": {
+                    "argumentName": "path",
+                    "formattedValue": "\"/\""
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 34957366,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "the status is",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the status is"
+                },
+                {
+                  "value": "200 OK",
+                  "argumentInfo": {
+                    "argumentName": "status",
+                    "formattedValue": "OK (200)"
+                  }
+                }
+              ],
+              "status": "FAILED",
+              "durationInNanos": 6500460,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "the content is",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the content is"
+                },
+                {
+                  "value": "Greetings from JGiven!",
+                  "argumentInfo": {
+                    "argumentName": "content",
+                    "formattedValue": "\"Greetings from JGiven!\""
+                  }
+                }
+              ],
+              "status": "SKIPPED",
+              "durationInNanos": 0,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "FAILED",
+          "errorMessage": "java.lang.AssertionError: Response status expected:\u003c200\u003e but was:\u003c404\u003e",
+          "stackTrace": [
+            "org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)",
+            "org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)",
+            "org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$is$1(StatusResultMatchers.java:64)",
+            "org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)",
+            "com.hate.jgivenwithspringboot.jgsb.MyStage.the_status_is(MyStage.java:43)",
+            "com.hate.jgivenwithspringboot.jgsb.MyStage$ByteBuddy$Cyseb6p2.the_status_is$accessor$1aZoSdDA(Unknown Source)",
+            "com.hate.jgivenwithspringboot.jgsb.MyStage$ByteBuddy$Cyseb6p2$auxiliary$1Pjbl4mR.call(Unknown Source)",
+            "com.hate.jgivenwithspringboot.jgsb.MyStage$ByteBuddy$Cyseb6p2.the_status_is(Unknown Source)",
+            "com.hate.jgivenwithspringboot.jgsb.TimeKeeperControllerTest.the_root_path_returns_greetings_from_JGiven(TimeKeeperControllerTest.java:21)",
+            "java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)",
+            "java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)",
+            "java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)",
+            "org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)",
+            "org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)",
+            "org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)",
+            "org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)",
+            "com.tngtech.jgiven.junit.JGivenMethodRule$1.evaluate(JGivenMethodRule.java:73)",
+            "org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)",
+            "org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)",
+            "org.springframework.test.context.junit4.statements.RunPrepareTestInstanceCallbacks.evaluate(RunPrepareTestInstanceCallbacks.java:64)",
+            "org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)",
+            "org.springframework.test.context.junit4.statements.SpringFailOnTimeout.evaluate(SpringFailOnTimeout.java:87)",
+            "org.springframework.test.context.junit4.statements.ProfileValueChecker.evaluate(ProfileValueChecker.java:103)",
+            "org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)",
+            "org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)",
+            "org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)",
+            "org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)",
+            "org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)",
+            "org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)",
+            "org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)",
+            "org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)",
+            "org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)",
+            "org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)",
+            "org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)",
+            "org.springframework.test.context.junit4.statements.ProfileValueChecker.evaluate(ProfileValueChecker.java:103)",
+            "org.springframework.test.context.junit4.rules.SpringClassRule$TestContextManagerCacheEvictor.evaluate(SpringClassRule.java:190)",
+            "org.junit.rules.RunRules.evaluate(RunRules.java:20)",
+            "org.junit.runners.ParentRunner.run(ParentRunner.java:363)",
+            "org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)",
+            "org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)",
+            "org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)",
+            "org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)",
+            "org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)",
+            "org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)"
+          ],
+          "durationInNanos": 65677023
+        }
+      ],
+      "durationInNanos": 65677023
+    }
+  ],
+  "tagMap": {}
+}

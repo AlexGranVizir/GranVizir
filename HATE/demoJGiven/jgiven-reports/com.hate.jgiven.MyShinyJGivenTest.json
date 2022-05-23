@@ -1,0 +1,77 @@
+{
+  "className": "com.hate.jgiven.MyShinyJGivenTest",
+  "name": "My Shiny J Given",
+  "scenarios": [
+    {
+      "className": "com.hate.jgiven.MyShinyJGivenTest",
+      "testMethodName": "something_should_happen",
+      "description": "something should happen",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "some state",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "some state"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 2949150,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "some action",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "some action"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 350260,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "some outcome",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "some outcome"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 333390,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 14251508
+        }
+      ],
+      "durationInNanos": 14251508,
+      "executionStatus": "SUCCESS"
+    }
+  ],
+  "tagMap": {}
+}
